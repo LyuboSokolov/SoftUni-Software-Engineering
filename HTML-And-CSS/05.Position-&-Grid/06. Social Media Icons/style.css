@@ -1,0 +1,30 @@
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+
+ul {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+
+ul:ntn:last-child {
+    margin: 0;
+}
+
+a {
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    color: black;
+}
+
+a:hover:not(li:nth-child(3) a) {
+    color: blue
+}
+
+li:nth-child(3) a :hover {
+    color: red;
+}
