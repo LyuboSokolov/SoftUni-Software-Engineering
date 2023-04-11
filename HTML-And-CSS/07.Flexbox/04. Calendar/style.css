@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+
+div,
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div {
+    max-width: 65vw;
+    height: 70vh;
+}
+
+span {
+    border: 1px solid black;
+    
+}
+
+section.notes {
+    flex-direction: column;
+}
+section.week:nth-child(1){
+background-color: red;
+}
