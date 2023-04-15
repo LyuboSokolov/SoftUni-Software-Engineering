@@ -1,0 +1,248 @@
+@import url("https://fonts.google.com/specimen/Raleway");
+
+:root {
+    --clr--gray-light: #efefef;
+    --clr--line: #7c7c7c;
+    --clr--text: black;
+    --clr--social-icon: #909090;
+    --clr-black: #111111;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    color: var(--clr--text);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section {
+    background-color: var(--clr--gray-light);
+    display: flex;
+    margin: 24px;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    position: relative;
+}
+
+.first .menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+}
+
+.first .text {
+    max-width: 30%;
+    margin-left: 100px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 36px;
+}
+
+h2 .bold {
+    font-weight: 600;
+}
+
+.first .desc {
+    font-style: italic;
+}
+
+.vertical-line {
+    background-color: var(--clr--line);
+    height: 80px;
+    width: 2px;
+    margin-top: 50px;
+}
+
+.first .img {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    max-width: 40%;
+
+}
+
+/* ABOUT */
+
+.second .about {
+    max-width: 50%;
+    padding-right: 180px;
+
+}
+
+.about .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.horizontal-line {
+    background-color: var(--clr--line);
+    height: 2px;
+    width: 80px;
+
+}
+
+.title h2 {
+    padding: 0px;
+    padding-left: 24px;
+}
+
+.about p {
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.about .second {
+    margin-bottom: 40px;
+
+}
+
+.second .img {
+    max-width: 45%;
+    width: 32%;
+    margin-left: 150px;
+}
+
+.social-icon {
+
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+
+    gap: 24px
+}
+
+.social-icon li {
+    width: 40px;
+    height: 40px;
+    background-color: var(--clr--social-icon);
+    color: white;
+    font-size: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+/* Poster */
+
+.third .bg-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Future */
+
+.four {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.four .text {
+    max-width: 35%;
+}
+
+.four p {
+    font-style: italic;
+}
+
+
+.four img {
+    max-width: 50%;
+}
+
+/* Gallery */
+.gallery {
+    padding: 0 200px;
+}
+
+.gallery img {
+    width: 33.33%;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery img:nth-child(2) {
+    transform: scale(1.7);
+    z-index: 2;
+}
+
+/* Contacts */
+
+.contacts {
+    flex-direction: column;
+    justify-content: unset;
+    position: relative;
+}
+
+.contacts .title {
+    max-width: 60%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.contacts h2 {
+    margin-bottom: 24px;
+}
+
+.contacts p {
+    font-style: italic;
+}
+
+.form {
+    display: grid;
+    width: 35%;
+    max-height: 40%;
+    grid-template:
+        "email subject"
+        "message message"
+        "btn btn";
+    gap: 32px;
+
+}
+
+.form input {
+    background-color: transparent;
+    padding-left: 10px;
+    padding-top:6px;
+    padding-left: 6px;
+}
+
+.form textarea {
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+.email {
+    grid-area: email;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.message {
+    grid-area: message;
+}
+
+.btn {
+    grid-area: btn;
+    background-color: var(--clr-black);
+    color: white;
+}
+.contacts .copy {
+    position: absolute;
+    bottom: 0px;
+    font-style: normal;
+}
