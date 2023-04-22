@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-top: 24px;
+    margin-right: 48px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+}
+
+nav p {
+    font-size: 32px;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-list>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN */
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    background-color: #85dcff;
+    height: 700px;
+    padding-left: 200px;
+    padding-right: 120px;
+    align-items: center;
+}
+
+.home .desc {
+    width: 45%;
+}
+
+.img-promo {
+    height: 100%;
+    max-width: 40%;
+}
+
+.desc h2 {
+    font-size: 42px;
+    margin-bottom: 24px;
+}
+
+.desc p {
+    font-size: 20px;
+
+}
+
+div.btns {
+    margin-top: 36px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    font-size: 24px;
+    padding: 14px 76px;
+    border-radius: 12px;
+
+}
+
+.btn-news {
+    background-color: #000000;
+    color: white;
+}
+
+/* HELP */
+
+section.help {
+    text-align: center;
+    margin-top: 28px;
+    padding-bottom: 48px;
+}
+
+section.help .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+
+}
+
+section.help .subtitle {
+    font-size: 28px;
+    padding-bottom: 48px;
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.help .items {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+.item {
+    width: 25%;
+}
+
+.item i {
+    font-size: 180px;
+    color: #85dcff;
+    padding-bottom: 36px;
+}
+
+.item h4 {
+    font-size: 24px;
+    padding-bottom: 36px;
+}
+
+/* WORK */
+
+section.work {
+    background-color: #85dcff;
+    text-align: center;
+    height: 750px;
+
+
+    align-items: center;
+
+}
+
+.work.container {
+    display: flex;
+    width: 70%;
+}
+
+.work h2 {
+    font-size: 40px;
+    padding: 100px 0;
+}
+
+/* div.container {
+    display: flex;
+    margin: 0 300px;
+    justify-content: space-between;
+    font-size: 28px;
+}
+
+.left .right {
+    width: 35%;
+}
+
+.right {
+    width: 35%;
+} */
+
+div.container {
+
+    display: grid;
+    grid-template-areas:
+        "first four"
+        "second five"
+        "third six";
+    width: 60%;
+}
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+}
+
+.third {
+    grid-area: third;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+
+/* GALLERY */
+
+.gallery {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.animals-title {
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.animals-subtitle {
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+
+.animals-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+
+.animals-container img {
+    width: 23%;
+}
+
+.our-practice {
+    margin-bottom: 120px;
+}
+
+.our-practice h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.our-practice div {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.bgc {
+    background-color: #85dcff;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+}
+
+.our-practice p {
+    padding: 24px 0 24px 18px;
+    font-weight: 700;
+}
+
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 100px;
+}
+
+.contacts div {
+    width: 40%;
+}
+
+.contacts img {
+    width: 50%;
+}
+
+.contacts h2 {
+    font-size: 42px;
+    margin-bottom: 90px;
+}
+
+.contacts p {
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+
+.contacts input {
+    padding: 16px;
+    border-radius: 8px;
+    padding-right: 50px;
+}
+
+.contacts button {
+    margin-top: 32px;
+    padding: 12px 60px;
+    font-size: 20px;
+    background-color: #000000;;
+    color: white;
+    border-radius: 10px;
+}
+
+footer {
+    margin: 24px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+    font-size: 48px;
+}
+
+footer p {
+    font-weight: 700;
+    font-size: 20px;
+}
